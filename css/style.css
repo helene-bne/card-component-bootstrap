@@ -1,0 +1,312 @@
+.bootstrap-card-component .container-600 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .bootstrap-card-component .container-600 {
+    max-width: 100%;
+  }
+}
+
+.bootstrap-card-component .container-600 .card-container {
+  border-radius: 0;
+  border-bottom: none;
+  min-height: 290px;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .width-100 {
+  width: 100%;
+  padding: 20px;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid ul.list-group {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-top: 1px solid #dee2e6;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .list-group-item {
+  padding: 20px;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .list-group-item .nav-link {
+  color: #725BA0;
+  padding: 0;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .list-group-item .nav-link.active {
+  color: #353A40;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box {
+  height: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box {
+    height: 200px;
+  }
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box .tab-pane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box .tab-pane.fade {
+  opacity: 0;
+  z-index: 1;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box .tab-pane.active {
+  z-index: 2;
+  opacity: 1;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box #tab-first-item {
+  background-color: #0700fe;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box #tab-second-item {
+  background-color: yellow;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box #tab-second-item h2 {
+  color: black;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box #tab-third-item {
+  background-color: black;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box .pic-box {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box .pic-box h1, .bootstrap-card-component .container-600 .card-container .container-grid .col-pic-box .pic-box h2 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.bootstrap-card-component .container-600 .nav-tabs {
+  background-color: #353A40;
+  padding-top: 10px;
+  border-bottom: none;
+}
+
+.bootstrap-card-component .container-600 .nav-tabs .nav-link {
+  border-radius: 0;
+  background-color: #dee1e6;
+  color: #725BA0;
+  padding: 8px 20px;
+  margin-left: 10px;
+}
+
+.bootstrap-card-component .container-600 .nav-tabs .nav-link.disabled {
+  background-color: #6C757E;
+  color: white;
+}
+
+.bootstrap-card-component .container-600 .nav-tabs li:first-child .nav-link {
+  background-color: white;
+  color: #6C757E;
+  margin-left: 10px;
+}
+
+.bootstrap-card-component .container-600 #second-tab .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  min-height: 290px;
+}
+
+.bootstrap-card-component .container-600 #second-tab .loader-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  color: #353A40;
+  font-family: Arial, sans-serif;
+}
+
+.bootstrap-card-component .container-600 #second-tab .loader-container .loader {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+}
+
+.bootstrap-card-component .container-600 #second-tab .loader-container .loader .loader-path {
+  stroke: #353A40;
+  stroke-linecap: round;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite;
+}
+
+.bootstrap-card-component .container-600 #second-tab .loader-container p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.bootstrap-card-component .container-600 #third-tab .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.bootstrap-card-component .container-600 #third-tab .container-content-third-tab {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.bootstrap-card-component .container-600 #third-tab p {
+  font-weight: 500;
+}
+
+.bootstrap-card-component .container-600 #third-tab small {
+  color: #6C757E;
+}
+
+.bootstrap-card-component .container-600 #third-tab img {
+  width: 100%;
+  height: 290px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #353A40;
+  padding: 10px 20px;
+  border: 1px solid #dee2e6;
+  border-top: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+.footer p {
+  color: white;
+  margin: 0;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+/*# sourceMappingURL=style.css.map */

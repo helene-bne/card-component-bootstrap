@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Switcher</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="bootstrap-card-component">
+        <div class="container container-600">
+            <!-- Tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="first-tab-link" href="#first-tab" data-bs-toggle="tab" role="tab" aria-controls="first-tab" aria-selected="true">Tab 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="second-tab-link" href="#second-tab" data-bs-toggle="tab" role="tab" aria-controls="second-tab" aria-selected="false">Tab 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="third-tab-link" href="#third-tab" data-bs-toggle="tab" role="tab" aria-controls="third-tab" aria-selected="false">Tab 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+    
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- First Tab -->
+                <div class="tab-pane fade show active" id="first-tab" role="tabpanel" aria-labelledby="first-tab-link">
+                    <div class="card card-container">
+                        <div class="container-grid">
+                            <div class="width-100">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <ul class="nav flex-column list-group list-group-flush">
+                                        <li class="nav-item list-group-item">
+                                            <a class="nav-link active" id="tab-first-item-link" href="#tab-first-item" data-bs-toggle="tab" role="tab" aria-controls="tab-first-item" aria-selected="true">An item</a>
+                                        </li>
+                                        <li class="nav-item list-group-item">
+                                            <a class="nav-link" id="tab-second-item-link" href="#tab-second-item" data-bs-toggle="tab" role="tab" aria-controls="tab-second-item" aria-selected="false">A second item</a>
+                                        </li>
+                                        <li class="nav-item list-group-item">
+                                            <a class="nav-link" id="tab-third-item-link" href="#tab-third-item" data-bs-toggle="tab" role="tab" aria-controls="tab-third-item" aria-selected="false">A third item</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="tab-content col-pic-box">
+                                        <div class="tab-pane fade show active" id="tab-first-item" role="tabpanel" aria-labelledby="tab-first-item-link">
+                                            <div class="pic-box"><h1>Pic-1</h1></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-second-item" role="tabpanel" aria-labelledby="tab-second-item-link">
+                                            <div class="pic-box"><h2>Pic-2</h2></div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-third-item" role="tabpanel" aria-labelledby="tab-third-item-link">
+                                            <div class="pic-box"><h2>Pic-3</h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Second Tab -->
+                <div class="tab-pane fade" id="second-tab" role="tabpanel" aria-labelledby="second-tab-link">
+                    <div class="card card-container">
+                        <div class="loader-container">
+                            <div>
+                            <p>Loading...</p>
+                            <svg class="loader" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                              <circle class="loader-path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                            </svg>
+                            </div>
+                        </div>                          
+                    </div>
+                </div>
+    
+                <!-- Third Tab -->
+                <div class="tab-pane fade" id="third-tab" role="tabpanel" aria-labelledby="third-tab-link">
+                    <div class="card card-container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <img src="img/hello.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="container-content-third-tab">
+                                    <div>
+                                        <h3 class="card-title">Card title</h3>
+                                        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <small>Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>2 days ago</p>
+    </footer>
+    
+
+<script src="js/jquery-3.6.0.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/scripts.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>
