@@ -1,14 +1,27 @@
 // Colors
-$c-dark-gray: var(--bs-gray-dark);
-$c-medium-gray: var(--bs-gray);
-$c-light-gray: var(--bs-light);
-$c-purple: var(--bs-purple);
-$c-white: var(--bs-white);
-$c-black: var(--bs-dark);
-$c-blue: var(--bs-blue);
+$c-dark-gray: #343a40;
+$c-medium-gray: #6c757d;
+$c-light-gray: #f8f9fa;
+$c-purple: #6f42c1;
+$c-white: #ffffff;
+$c-black: #000000;
+$c-blue: #0d6efd;
+$c-border-color: #dee2e6;
 $c-border-color: var(--bs-list-group-border-color);
 $c-gradient: linear-gradient(to right, $c-purple, $c-blue);
 $border-radius: 15px;
+
+// Bootstrap Colors
+$c-contextual-colors: (
+  primary: #0d6efd,
+  secondary: #6c757d,
+  success: #198754,
+  danger: #dc3545,
+  warning: #ffc107,
+  info: #0dcaf0,
+  light: #f8f9fa,
+  dark: #212529
+);
 
 // Updated styles
 .bootstrap-card-component {
@@ -91,6 +104,10 @@ $border-radius: 15px;
             align-items: center;
             border-bottom-right-radius: $border-radius;
             transition: opacity 0.3s ease-in-out;
+
+            @media only screen and (max-width: 768px) {
+              border-bottom-left-radius: $border-radius;
+            }
 
             &.fade {
               opacity: 0;
@@ -247,6 +264,97 @@ $border-radius: 15px;
   p {
     color: $c-white;
     margin: 0;
+  }
+}
+
+@mixin contextual-styles($bg-color) {
+  color: if(lightness($bg-color) > 50%, $c-dark-gray, $c-white);
+
+  .nav-tabs {
+    .nav-link {
+      background-color: lighten($bg-color, 20%);
+      color: if(lightness($bg-color) > 50%, $c-dark-gray, $c-white);
+      border: 1px solid darken($bg-color, 10%);
+
+      &.active {
+        background-color: darken($bg-color, 10%);
+        color: $c-white;
+        border-color: darken($bg-color, 10%);
+      }
+
+      &.disabled {
+        background-color: lighten($bg-color, 40%);
+        color: $c-medium-gray;
+      }
+    }
+  }
+
+  .card-container {
+    background-color: $bg-color;
+    border: 1px solid darken($bg-color, 10%);
+    border-radius: $border-radius;
+
+    .tab-content {
+      .tab-pane {
+        h2 {
+          color: if(lightness($bg-color) > 50%, $c-dark-gray, $c-white);
+        }
+        p {
+          color: if(lightness($bg-color) > 50%, $c-medium-gray, $c-white);
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: lighten($bg-color, 20%);
+    p,
+    small {
+      color: if(lightness($bg-color) > 50%, $c-dark-gray, $c-white);
+    }
+  }
+}
+
+// Application des styles contextuels pour chaque classe
+.bootstrap-card-component {
+  @each $name, $color in $c-contextual-colors {
+    &.#{$name} {
+      @include contextual-styles($color);
+    }
+  }
+
+  .container-600 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+    display: flex;
+
+    .nav-link {
+      padding: 10px 20px;
+      border-radius: 0;
+      margin-right: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .footer {
+    padding: 10px 20px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+    small {
+      font-size: 0.9rem;
+    }
   }
 }
 
